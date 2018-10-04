@@ -1,0 +1,66 @@
+//helper class - ensures a row of cards will always be the same height
+.row-flex-card > div > .card {
+  height: calc(100% - 1rem);
+  margin-bottom: 1rem;
+}
+
+.card-carrier {
+  &.clickable {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.2s cubic-bezier(.25,.8,.25,1);
+    border:none;
+    color: $body-color;
+    cursor: pointer;
+    &:hover {
+      text-decoration: none;
+      box-shadow: 0 5px 12px rgba(0,0,0,.2), 0 .5px 3px rgba(0,0,0,.18);
+    }
+  }
+
+  //title block
+  .carrier-logo {
+    max-width: 75px;
+    max-height: 75px;
+  
+  }
+  .rating-stars{
+    fill: $yellow;
+    stroke: none;
+    padding-right: .15rem;
+    height: 20px;
+    width: 20px;
+  }
+  .feature-icon {
+    height: 30px;
+    width: 30px;
+    padding-right:.25rem
+  }
+  
+  //pricing block
+  .tag {
+    color: $purple;
+    font-weight: bold;
+    padding-right: .5rem;
+  }
+  .dollar {
+    vertical-align: top;
+    color: $gray-500;
+  }
+  .rate {
+    font-weight: 300;
+    color: $gray-500;
+    font-size: 2rem;
+    line-height:2rem;
+    letter-spacing: -1px;
+  }
+
+  //toggle icon to expand card details
+  .row-more-details.show + .row-toggle {
+    .icon-down { 
+      transform: rotate(180deg);
+    }
+  }
+  .icon-down {
+    transition: transform ease .25s;
+  }
+}

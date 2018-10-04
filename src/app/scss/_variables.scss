@@ -1,0 +1,15 @@
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #959595;
+$gray-400: #495057;
+$gray-500: #212529;
+$purple: #5c6cff;
+$yellow: #ffe234;
+$yellow-gradient: linear-gradient(350deg, #f87000 40%, #f8ae00 85%);
+$yellow-gradient-dark:(linear-gradient(350deg, darken(#f87000, 10%) 40%, darken(#f8ae00, 10%) 85%), 10%);
+$blue-gradient: linear-gradient(350deg, #6169f4 40%, #1cbeec 85%);
+$blue-gradient-dark: (linear-gradient(350deg, darken(#6169f4, 10%) 40%, darken(#1cbeec, 10%) 85%), 10%);
+
+$primary-color: $purple;
+$body-color: $gray-300;
+

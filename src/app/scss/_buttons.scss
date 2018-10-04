@@ -1,0 +1,24 @@
+.btn-cta-primary {
+    background: $yellow-gradient;
+    border-radius: 2rem;
+    color: white;
+    font-weight: 300;
+    padding: .5rem 1.5rem;
+    &:hover {
+        background: $yellow-gradient-dark;
+        color: white;
+    }
+}
+
+  .btn-cta-secondary {
+    background: $blue-gradient;
+    border-radius: 2rem;
+    color: white;
+    font-weight: 300;
+    padding: .5rem 1.5rem;
+    &:hover {
+        background: $blue-gradient-dark;
+        color: white;
+    }
+
+  }
